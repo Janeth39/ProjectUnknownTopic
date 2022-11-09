@@ -16,4 +16,10 @@ class CarTest {
         greenCar.setPlates("2345691");
         assertTrue(greenCar.getPlates().matches("2345691"));
     }
+    @Test
+    void setPlatesLetterFail() {
+        Car greenCar = new Car();
+        greenCar.setPlates("234A691");
+        assertTrue(greenCar.getPlates().matches("0000000"));
+    }
 }

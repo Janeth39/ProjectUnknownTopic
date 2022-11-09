@@ -20,11 +20,11 @@ public class Car {
     {
         if(!plates.matches("[0-9]*"))
         {
-//            System.out.println("NOPE!");
             this.plates = "0000000";
         }
 
-        else {
+        else
+        {
             this.plates = plates;
         }
     }
