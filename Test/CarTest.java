@@ -28,4 +28,11 @@ class CarTest {
         greenCar.setPlates("234*691");
         assertTrue(greenCar.getPlates().matches("0000000"));
     }
+
+    @Test
+    void setNamePass() {
+        Car greenCar = new Car("Jayden");
+        greenCar.setPlates("2347691");
+        assertTrue(greenCar.getPlates().matches("2347691"));
+    }
 }
