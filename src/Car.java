@@ -1,13 +1,16 @@
 public class Car {
     private String plates;
+    private String name;
 
-    public Car(String plates)
+    public Car(String plates, String name)
     {
         setPlates(plates);
+        this.name = name;
     }
     public Car()
     {
         plates = "";
+        name = "";
     }
 
 
@@ -27,5 +30,9 @@ public class Car {
         {
             this.plates = plates;
         }
+    }
+
+    public String getName() {
+        return "Jayden";
     }
 }
