@@ -5,7 +5,7 @@ public class Car {
     public Car(String plates, String name)
     {
         setPlates(plates);
-        this.name = name;
+        setName(name);
     }
     public Car()
     {
@@ -33,6 +33,16 @@ public class Car {
     }
 
     public String getName() {
-        return "Jayden";
+        return name;
+    }
+    public void setName( String name) {
+        if(!name.matches("[A-Z][a-z]*"))
+        {
+            this.name = "0000000";
+        }
+        else
+        {
+            this.name = name;
+        }
     }
 }

@@ -30,8 +30,17 @@ class CarTest {
     }
 
     @Test
-    void getNamePass() {
+    void getNamePass()
+    {
         Car greenCar = new Car();
+        greenCar.setName("Jayden");
         assertTrue(greenCar.getName().matches("Jayden"));
+    }
+    @Test
+    void setNamePass()
+    {
+        Car greenCar = new Car();
+        greenCar.setName("Janeth");
+        assertTrue(greenCar.getName().matches("Janeth"));
     }
 }
