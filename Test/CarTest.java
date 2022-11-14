@@ -43,4 +43,11 @@ class CarTest {
         greenCar.setName("Janeth");
         assertTrue(greenCar.getName().matches("Janeth"));
     }
+    @Test
+    void setNameNumberFail()
+    {
+        Car greenCar = new Car();
+        greenCar.setName("Ja9eth");
+        assertTrue(greenCar.getName().matches("null"));
+    }
 }

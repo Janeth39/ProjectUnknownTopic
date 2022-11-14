@@ -38,7 +38,7 @@ public class Car {
     public void setName( String name) {
         if(!name.matches("[A-Z][a-z]*"))
         {
-            this.name = "0000000";
+            this.name = "null";
         }
         else
         {
