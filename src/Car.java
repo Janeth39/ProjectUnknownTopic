@@ -28,7 +28,6 @@ public class Car {
         {
             this.plates = "0000000";
         }
-
         else
         {
             this.plates = plates;
