@@ -1,16 +1,19 @@
 public class Car {
     private String plates;
     private String name;
+    private String age;
 
-    public Car(String plates, String name)
+    public Car(String plates, String name, String age)
     {
         setPlates(plates);
         setName(name);
+        setAge(age);
     }
     public Car()
     {
         plates = "";
         name = "";
+        age = "";
     }
 
 
@@ -21,7 +24,7 @@ public class Car {
 
     public void setPlates(String plates)
     {
-        if(!plates.matches("[0-9]*"))
+        if(!plates.matches("[0-9]{7}"))
         {
             this.plates = "0000000";
         }
@@ -45,4 +48,6 @@ public class Car {
             this.name = name;
         }
     }
+
+
 }
