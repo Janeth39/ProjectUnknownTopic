@@ -49,5 +49,18 @@ public class Car {
         }
     }
 
-
+    public String getAge()
+    {
+        return age;
+    }
+    public void setAge( String age) {
+        if(!age.matches("[0-9]{2}"))
+        {
+            this.age = "invalid";
+        }
+        else
+        {
+            this.age = age;
+        }
+    }
 }
