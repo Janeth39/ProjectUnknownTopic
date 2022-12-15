@@ -2,18 +2,21 @@ public class Car {
     private String plates;
     private String name;
     private String age;
+    private String Gender;
 
-    public Car(String plates, String name, String age)
+    public Car(String plates, String name, String age, String Gender)
     {
         setPlates(plates);
         setName(name);
         setAge(age);
+        setGender(Gender);
     }
     public Car()
     {
         plates = "";
         name = "";
         age = "";
+        Gender = "";
     }
 
 
@@ -61,5 +64,23 @@ public class Car {
         {
             this.age = age;
         }
+    }
+    public String getGender()
+    {
+        return Gender;
+    }
+
+    public void setGender(String Gender)
+    {
+       this.Gender = Gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "plates='" + plates + '\'' +
+                ", name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }
