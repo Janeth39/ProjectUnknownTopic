@@ -3,13 +3,15 @@ public class Car {
     private String name;
     private String age;
     private String Gender;
+    private String insuranceCost;
 
-    public Car(String plates, String name, String age, String Gender)
+    public Car(String plates, String name, String age, String Gender,String insuranceCost)
     {
         setPlates(plates);
         setName(name);
         setAge(age);
         setGender(Gender);
+        setInsuranceCost(insuranceCost);
     }
     public Car()
     {
@@ -72,8 +74,23 @@ public class Car {
 
     public void setGender(String Gender)
     {
-       this.Gender = Gender;
+\       if(Gender.equals("F")){
+           Gender="Female";
+       }
+        else if(Gender.equals("M")){
+            Gender="Male";
+        }
     }
+    public String getInsuranceCost()
+    {
+        return insuranceCost;
+    }
+
+    public void setInsuranceCost(String insuranceCost)
+    {
+        this.insuranceCost = insuranceCost;
+    }
+
 
     @Override
     public String toString() {
